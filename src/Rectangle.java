@@ -19,6 +19,33 @@ public class Rectangle extends Shape {
         super.filled = f;
     }
 
-    
+    public double getWidth() {
+        return this.width;
+    }
+
+    public void setWidth(double w) {
+        this.width = w;
+    }
+
+    public double getLength() {
+        return this.length;
+    }
+
+    public void setLength(double l) {
+        this.length = l;
+    }
+
+    public double getArea() {
+        return length*width;
+    }
+
+    public double getPerimeter() {
+        return (2*length)+(2*width);
+    }
+
+    public String toString() {
+        return "Rectangle is " + getColor() + " and " + isFilled() +
+                " with a length of " + getLength() + " and a width of " + getWidth();
+    }
 
 }

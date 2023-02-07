@@ -1,3 +1,4 @@
+import java.math.*;
 public class Circle extends Shape {
     private double radius;
 
@@ -24,11 +25,11 @@ public class Circle extends Shape {
     }
 
     public double getArea() {
-        return 3.14*(getRadius()*getRadius());
+        return Math.PI*(getRadius()*getRadius());
     }
 
     public double getPerimeter() {
-        return 2*3.14*getRadius();
+        return 2*Math.PI*getRadius();
     }
 
     public String toString() {
