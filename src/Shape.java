@@ -27,6 +27,9 @@ public abstract class Shape {
         this.filled = f;
     }
 
+    abstract public double getArea();
+    abstract public double getPerimeter();
+
     public String toString() {
         return "Shape is " + getColor() + " and " + isFilled();
     }
